@@ -35,7 +35,7 @@ public class FlowerTest {
     @Test
     public void testSepalLength() {
         double sepalLength = 5.5;
-        flower.setSepalLength(sepalLength);
+        flower.setSepalLength(5.5);
         Assertions.assertEquals(sepalLength, flower.getSepalLength(), 0.001);
     }
 
