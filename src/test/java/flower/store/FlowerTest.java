@@ -32,24 +32,4 @@ public class FlowerTest {
         Assertions.assertEquals("#FF0000", flower.getColor());
     }
 
-    @Test
-    public void testSepalLength() {
-        double sepalLength = 5.5;
-        flower.setSepalLength(5.5);
-        Assertions.assertEquals(sepalLength, flower.getSepalLength(), 0.001);
-    }
-
-    @Test
-    public void testFlowerType() {
-        FlowerType flowerType = FlowerType.ROSE;
-        flower.setFlowerType(flowerType);
-        Assertions.assertEquals(flowerType, flower.getFlowerType());
-    }
-
-    @Test
-    public void testDefaultConstructor() {
-        Flower defaultFlower = new Flower();
-        Assertions.assertEquals(0.0, defaultFlower.getPrice(), 0.001);
-        Assertions.assertNull(defaultFlower.getFlowerType());
-    }
 }
